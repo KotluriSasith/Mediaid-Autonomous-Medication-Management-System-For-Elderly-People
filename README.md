@@ -1,21 +1,41 @@
-🩺 MediAid: Autonomous Medication Management System for Elderly People
-MediAid is an AI-powered Streamlit application designed to help elderly individuals manage their medications with ease. It extracts text from medical prescriptions (images or PDFs), translates them into multiple languages, answers medication-related queries, provides audio playback, sets reminders, and alerts caregivers if doses are missed.
+# 🩺 MediAid: Autonomous Medication Management System for Elderly People
 
-🔍 Features
-📄 OCR from Prescriptions
-Upload a scanned image or PDF of your medical prescription and extract its contents automatically using Tesseract OCR.
+**MediAid** is an **AI-powered Streamlit application** designed to help elderly individuals manage their medications independently and reliably. It supports OCR-based prescription scanning, multilingual translation, AI-powered query response, voice instructions, reminders, and real-time caregiver notifications.
 
-🌐 Multilingual Translation
-Translate prescription text into English, Spanish, or Malayalam using Google Translate API for better accessibility.
+---
 
-🔊 Text-to-Speech (TTS)
-Converts translated text into speech using gTTS and plays it aloud for users with visual impairments or literacy challenges.
+## 🔍 **Features**
 
-💬 AI Chat Support
-Ask any question related to your prescription. MediAid uses LangChain and Google Generative AI to generate intelligent responses based on prescription context.
+- 📄 **OCR from Prescriptions**  
+  Upload prescription images or PDFs and extract content using **Tesseract OCR**.
 
-⏰ Medication Reminders
-Set and manage medication times. The system reminds users via on-screen alerts and audio prompts.
+- 🌐 **Multilingual Translation**  
+  Supports translation to **English**, **Spanish**, and **Malayalam** using **Google Translate API**.
 
-📱 Caregiver Notifications
-If a dose is missed, MediAid sends real-time SMS (via Twilio) and email alerts to caregivers.
+- 🔊 **Text-to-Speech (TTS)**  
+  Converts translated text into audio using **gTTS**, making it easier for visually impaired users.
+
+- 💬 **AI Chat Support**  
+  Ask questions about your prescription. The system uses **LangChain** and **Google Generative AI** to provide contextual answers.
+
+- ⏰ **Medication Reminders**  
+  Set medication schedules. The system plays an alert and speaks out the reminder when it's time.
+
+- 📱 **Caregiver Notifications**  
+  If the user doesn't confirm a reminder, the app sends **SMS via Twilio** and **emails** to registered caregivers.
+
+---
+
+## ⚙️ **Tech Stack**
+
+| **Component**    | **Technology/Library**                     |
+|------------------|--------------------------------------------|
+| Frontend         | **Streamlit**                              |
+| OCR              | **PyTesseract**, **Pillow**                |
+| Translation      | **Google Translate API**, **Deep Translator** |
+| Text-to-Speech   | **gTTS**, **playsound**                    |
+| AI & NLP         | **LangChain**, **Google Generative AI**    |
+| Scheduling       | **schedule**, **datetime**, **threading**  |
+| Notifications    | **Twilio SMS**, **SMTP Email**             |
+| Vector Storage   | **FAISS**, **ChromaDB**                    |
+| Language Support | **English**, **Spanish**, **Malayalam**    |
