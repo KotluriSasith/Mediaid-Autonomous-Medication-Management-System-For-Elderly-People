@@ -1,0 +1,2 @@
+# Mediaid-Autonomous-Medication-Management-System-For-Elderly-People
+MediAid is an AI-powered Streamlit application designed to help elderly individuals manage their medications with ease. It extracts text from medical prescriptions (images or PDFs), translates them into multiple languages, answers medication-related queries, provides audio playback, sets reminders, and alerts caregivers if doses are missed.
